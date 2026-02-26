@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Habanero Free Spins – Casino Slots</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #d4001a 0%, #ffc700 100%);
+            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Roboto', sans-serif;
+        }
+        .overlay {
+            background: rgba(220, 0, 26, 0.85);
+            min-height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 450px;
+            margin: 90px auto 0 auto;
+            background: rgba(255, 215, 0, 0.94);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(100,0,0,0.45);
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 14px;
+            font-size: 2.3em;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(90deg,#ffec9e,#f9b700 60%,#ff2424 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            color: #d4001a;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .promo {
+            background: linear-gradient(90deg,#bb0100,#ffd700);
+            color: #fff;
+            padding: 16px 0;
+            border-radius: 12px;
+            font-size: 1.1em;
+            box-shadow: 0 0 14px 2px rgba(255,215,0,0.29);
+            margin-bottom: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .slots-bg {
+            background: url('https://img.icons8.com/fluency/96/slot-machine.png') repeat-x;
+            height: 70px;
+            margin-bottom: 22px;
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .login-form input {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #fffde7;
+            font-size: 1em;
+            margin-top: 2px;
+        }
+        .login-form button {
+            background: linear-gradient(90deg, #bb0100 65%, #ffd700 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.08em;
+            font-weight: bold;
+            padding: 11px 0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .login-form button:hover {
+            background: linear-gradient(90deg,#ffd700 0%, #bb0100 70%);
+            color: #d4001a;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 7px;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="container">
+    <div class="logo">Habanero Free Spins</div>
+    <div class="subtitle">Try Your Luck with Our Hot Slots!</div>
+    <div class="promo">Win Big Every Day – Claim Free Spins and Golden Rewards!</div>
+    <div class="slots-bg"></div>
+    <form class="login-form">
+        <input type="tel" placeholder="Phone Number" required pattern="[0-9]{10,}">
+        <input type="password" placeholder="Password" required minlength="6">
+        <button type="submit">Log In</button>
+    </form>
+</div>
+</body>
+</html>
