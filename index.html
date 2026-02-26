@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hebanaro Casino – 100 Free Spins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: radial-gradient(ellipse at top, #3a1c71 0%, #d76d77 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: rgba(0,0,0,0.80);
+      padding: 32px 28px;
+      border-radius: 18px;
+      box-shadow: 0 4px 32px rgba(30,0,75,0.5);
+      max-width: 350px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo {
+      margin-bottom: 24px;
+      font-size: 2.1rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #FFD700;
+    }
+    .promo {
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+      font-weight: bold;
+      color: #00F3FF;
+    }
+    .login-form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .login-form input {
+      padding: 10px 12px;
+      border-radius: 7px;
+      border: none;
+      background: #f9f9f7;
+      color: #272727;
+      font-size: 1rem;
+      outline: none;
+    }
+    .login-form button {
+      padding: 11px;
+      border: none;
+      border-radius: 7px;
+      background: linear-gradient(90deg, #FFD700 50%, #00F3FF 100%);
+      color: #373737;
+      font-weight: bold;
+      font-size: 1.09rem;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 2px 4px rgba(255,255,255,0.10);
+      transition: background .2s;
+    }
+    .login-form button:hover {
+      background: linear-gradient(90deg, #FFE177 50%, #5CFFE2 100%);
+    }
+    .note {
+      margin-top: 18px;
+      font-size: 0.93em;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <span>Hebanaro Casino</span>
+    </div>
+    <div class="promo">
+      🎰 Claim Your 100 Free Spins!
+    </div>
+    <div style="margin-bottom:8px; color:#fff;">
+      Login with your phone number and password to claim your spins.
+    </div>
+    <form class="login-form" onsubmit="loginHandler(event)">
+      <input 
+        type="tel" 
+        placeholder="Phone Number" 
+        name="phone" 
+        required
+        pattern="[0-9]{7,15}"
+        title="Enter a valid phone number"
+      />
+      <input 
+        type="password" 
+        placeholder="Password"
+        name="password"
+        required
+      />
+      <button type="submit">Claim 100 Free Spins</button>
+    </form>
+    <div class="note">
+      New to Hebanaro? Register easily after claim.<br>
+      Your information is kept secure.
+    </div>
+  </div>
+  <script>
+    function loginHandler(e) {
+      e.preventDefault();
+      // Ideally, send the credentials to your backend API here.
+      const form = e.target;
+      const phone = form.phone.value;
+      const password = form.password.value;
+      // For demo purposes:
+      alert(`Attempting login for: ${phone}\n(Implement backend authentication!)`);
+      // Redirect or show error/success as needed.
+    }
+  </script>
+</body>
+</html>
